@@ -1,7 +1,11 @@
-import Header from "@/app/Header";
+import Header from "@/app/Header/Header";
+import HeroSection from "@/app/HeroSection";
 
 export default function Home() {
   return (
-    <Header />
+      <div>
+        <Header />
+        <HeroSection />
+      </div>
   );
 }

@@ -1,4 +1,6 @@
-export default function Header() {
+import {Button} from "@/components/ui/button";
+
+export default function DesktopHeader() {
     return (
         <div className="flex justify-between items-center px-8 py-2">
             <div className="flex items-center gap-10">
@@ -11,8 +13,7 @@ export default function Header() {
                     <a href={"#FAQ"} className="font-semibold text-slate-600">FAQ</a>
                 </nav>
             </div>
-            <button>Sign up</button>
+            <Button className="bg-blue-600">Sign up</Button>
         </div>
     );
 }
-
