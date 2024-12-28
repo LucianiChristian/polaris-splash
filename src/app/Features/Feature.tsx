@@ -1,4 +1,4 @@
-import {BookOpen, CircleCheckBig} from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
 import React from "react";
 
 type Props = {
@@ -28,7 +28,7 @@ export default function Feature({ icon: Icon, header, subtitle, listItems }: Pro
                     }
                 </ul>
             </div>
-            <img src="/app-screenshot.png" alt="app screenshot" className="pt-10 md:pt-0"/>
+            <img src="/app-screenshot.png" alt="app screenshot" className="pt-10 lg:pt-0"/>
         </div>
     );
 }
