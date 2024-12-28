@@ -3,7 +3,7 @@ import MoreFeature from "./MoreFeature";
 
 export default function MoreFeaturesSection() {
     return (
-        <section className="flex flex-col items-center pt-16 pb-8 gap-12 lg:gap-[96]">
+        <section className="flex flex-col items-center pt-16 pb-[96] gap-12 lg:gap-[96]">
             <div className="flex flex-col items-center gap-5 max-w-[768] text-center px-4" id="features">
                 <p className="text-blue-500 font-semibold">Features</p>
                 <h2 className="text-4xl font-semibold">Discover More Ways to Stay Ahead</h2>
