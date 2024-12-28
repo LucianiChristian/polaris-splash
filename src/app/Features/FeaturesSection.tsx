@@ -3,18 +3,20 @@ import {BookOpen, ChartNoAxesColumn, SubtitlesIcon, Zap} from "lucide-react";
 
 export default function FeaturesSection() {
     return (
-        <section className="flex flex-col items-center pt-16 gap-16">
-            <div className="flex flex-col items-center gap-5 max-w-[768] text-center" id="features">
+        <section className="flex flex-col items-center pt-16 pb-8 gap-12 lg:gap-[96]">
+            <div className="flex flex-col items-center gap-5 max-w-[768] text-center px-4" id="features">
                 <p className="text-blue-500 font-semibold">Features</p>
                 <h2 className="text-4xl font-semibold">Plan Your Way Through Life with Precision</h2>
                 <p className="text-[18] sm:text-xl text-slate-600">Just as a compass points to the North Star, Polaris guides your planning and
                     management journey with unmatched clarity and organization.</p>
             </div>
+            <div className="px-4 lg:px-0 flex flex-col gap-12 lg:gap-[96]">
             {
                 featuresContent.map(x => (
                     <Feature icon={x.icon} header={x.header} subtitle={x.subtitle} listItems={x.listItems} key={x.header}/>
                 ))
             }
+            </div>
         </section>
     );
 }
