@@ -1,15 +1,15 @@
-import MobileHeader from "@/app/Header/MobileHeader";
-import DesktopHeader from "@/app/Header/DesktopHeader";
+import {Button} from "@/components/ui/button";
 
-export default function Header() {
+export default function DesktopHeader() {
     return (
-        <header className="bg-slate-100">
-            <div className="md:hidden">
-                <MobileHeader />
+        <div className="hidden md:flex justify-between items-center px-8 py-2 bg-slate-100">
+            <div className="flex items-center gap-10">
+                <div className="flex items-center gap-4">
+                    <img src="/polaris-logo.png" alt="polaris logo" width={60}/>
+                    <div className="text-xl font-semibold text-gray-900">Polaris North Star</div>
+                </div>
             </div>
-            <div className="hidden md:block">
-                <DesktopHeader />
-            </div>
-        </header>
+            <Button className="bg-blue-600">Sign up</Button>
+        </div>
     );
 }
