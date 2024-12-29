@@ -2,7 +2,7 @@ import {Button} from "@/components/ui/button";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col items-center gap-16 py-8 sm:py-16 px-4">
+        <section className="flex flex-col items-center gap-16 py-8 sm:py-16 px-4 bg-slate-100">
             <div className="flex flex-col items-center gap-8 max-w-[768]">
                 <img src="/polaris-logo.png" alt="polaris logo" height={156} width={156}/>
                 <div className="flex flex-col items-center gap-6 text-center">
