@@ -1,6 +1,7 @@
-import { CircleCheckBig } from "lucide-react";
+import { Check } from "lucide-react";
 import React from "react";
 import FeatureIcon from "../Shared/FeatureIcon";
+import ListItem from "../Shared/ListItem";
 
 type Props = {
     icon: React.ComponentType<{className: string}>, 
@@ -19,14 +20,7 @@ export default function Feature({ icon: Icon, header, subtitle, listItems }: Pro
                     <p className="text-slate-600">{ subtitle }</p>
                 </div>
                 <ul className="text-slate-600 flex flex-col gap-4 lg:gap-5">
-                    {
-                        listItems.map(item => (
-                            <li className="flex items-center gap-3" key={item}>
-                                <CircleCheckBig  />
-                                { item }
-                            </li>
-                        ))
-                    }
+                    { listItems.map(ListItem) }
                 </ul>
             </div>
             <img src="/app-screenshot.png" alt="app screenshot" className="pt-10 lg:pt-0"/>
