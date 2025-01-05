@@ -9,7 +9,7 @@ export default function Header() {
                     <div className="text-xl font-semibold text-gray-900">Polaris North Star</div>
                 </div>
             </div>
-            <Button className="bg-blue-600">Sign up</Button>
+            <a href="#subscription-section"><Button className="bg-blue-600">Sign up</Button></a>
         </div>
     );
 }
