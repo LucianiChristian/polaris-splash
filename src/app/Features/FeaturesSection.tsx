@@ -12,8 +12,14 @@ export default function FeaturesSection() {
             </div>
             <div className="px-4 lg:px-0 flex flex-col gap-12 lg:gap-[96]">
             {
-                featuresContent.map(x => (
-                    <Feature icon={x.icon} header={x.header} subtitle={x.subtitle} listItems={x.listItems} key={x.header}/>
+                featuresContent.map((x, index) => (
+                    <Feature 
+                        icon={x.icon} 
+                        header={x.header} 
+                        subtitle={x.subtitle} 
+                        listItems={x.listItems} 
+                        key={x.header}
+                        isLeft={index % 2 === 0}/>
                 ))
             }
             </div>
