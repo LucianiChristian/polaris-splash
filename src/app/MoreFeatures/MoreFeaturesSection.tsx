@@ -9,7 +9,7 @@ export default function MoreFeaturesSection() {
                 <h2 className="text-4xl font-semibold">Discover More Ways to Stay Ahead</h2>
                 <p className="text-[18] sm:text-xl text-slate-600">Polaris enhances your planning with additional features designed to keep you organized and focused.</p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-8 px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-8 px-8 lg:px-16">
             {
                 featuresContent.map(x => (
                     <MoreFeature icon={x.icon} header={x.header} subtitle={x.subtitle} key={x.header}/>
