@@ -1,6 +1,6 @@
 import {Button} from "@/components/ui/button";
 
-export default function DesktopHeader() {
+export default function Header() {
     return (
         <div className="hidden md:flex justify-between items-center px-8 py-2 bg-slate-100">
             <div className="flex items-center gap-10">
