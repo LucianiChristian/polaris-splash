@@ -1,4 +1,5 @@
 import {Button} from "@/components/ui/button";
+import SignUpButton from "./Header/SignUpButton";
 
 export default function HeroSection() {
     return (
@@ -9,7 +10,7 @@ export default function HeroSection() {
                     <h1 className="text-4xl sm:text-6xl font-semibold">Polaris North Star</h1>
                     <p className="text-[18] sm:text-xl text-slate-600">A powerful management tool with an integrated planning system to help teams and individuals stay aligned and achieve their goals.</p>
                 </div>
-                <a href="#subscription-section"><Button className="bg-blue-600 w-full sm:w-auto" size="lg">Sign up</Button></a>
+                <SignUpButton className="w-full sm:w-auto" size="lg"/>
             </div>    
             <img src="/app-screenshot.png" alt="app screenshot" className="max-w-[792] w-full"/>
         </section>

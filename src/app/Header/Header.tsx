@@ -1,4 +1,5 @@
 import {Button} from "@/components/ui/button";
+import SignUpButton from "./SignUpButton";
 
 export default function Header() {
     return (
@@ -9,7 +10,7 @@ export default function Header() {
                     <div className="text-xl font-semibold text-gray-900">Polaris North Star</div>
                 </div>
             </div>
-            <a href="#subscription-section"><Button className="bg-blue-600">Sign up</Button></a>
+            <SignUpButton />
         </div>
     );
 }
