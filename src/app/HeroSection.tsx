@@ -12,7 +12,7 @@ export default function HeroSection() {
                 </div>
                 <SignUpButton className="w-full sm:w-auto" size="lg"/>
             </div>    
-            <img src="/app-screenshot.png" alt="app screenshot" className="max-w-[792] w-full"/>
+            <img src="/app-screenshot.png" alt="app screenshot" className="max-w-[792px] w-full"/>
         </section>
     );
 }

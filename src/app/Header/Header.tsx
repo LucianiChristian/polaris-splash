@@ -1,4 +1,3 @@
-import {Button} from "@/components/ui/button";
 import SignUpButton from "./SignUpButton";
 
 export default function Header() {

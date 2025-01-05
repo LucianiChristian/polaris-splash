@@ -14,7 +14,7 @@ type Props = {
 
 export default function Feature({ icon: Icon, header, subtitle, listItems, imageSrc, imageAlt, isLeft }: Props) {
     return (
-        <div className="w-full lg:pl-[100] flex flex-col lg:flex-row overflow-x-hidden" style={{direction: isLeft ? "ltr" : "rtl"}}>
+        <div className="w-full lg:pl-[100px] flex flex-col lg:flex-row overflow-x-hidden" style={{direction: isLeft ? "ltr" : "rtl"}}>
             <div className="flex flex-col gap-8 lg:w-[50%] flex-shrink-0 px-4" style={{direction: "ltr"}}>
                 <FeatureIcon icon={ Icon }/>
                 <div className="flex flex-col gap-4">
