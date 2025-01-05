@@ -14,12 +14,14 @@ export default function FeaturesSection() {
             {
                 featuresContent.map((x, index) => (
                     <Feature 
-                        icon={x.icon} 
-                        header={x.header} 
-                        subtitle={x.subtitle} 
-                        listItems={x.listItems} 
-                        key={x.header}
-                        isLeft={index % 2 === 0}/>
+                        icon={x.icon}
+                        header={x.header}
+                        subtitle={x.subtitle}
+                        listItems={x.listItems}
+                        isLeft={index % 2 === 0}
+                        imageSrc={x.imgSrc} 
+                        imageAlt={x.imgAlt}
+                        key={x.header} />
                 ))
             }
             </div>
@@ -32,6 +34,8 @@ const featuresContent = [
         icon: BookOpen,
         header: "Daily Planner",
         subtitle: "Stay organized and on top of your day.",
+        imgSrc: "/app-screenshot.png",
+        imgAlt: "main screen",
         listItems: [
             "Organize your day with an intuitive to-do list and scheduling system.",
             "Jot down important notes and track your daily expenses with ease.",
@@ -42,6 +46,8 @@ const featuresContent = [
         icon: Zap,
         header: "Project Management",
         subtitle: "Track meetings, discussions, and employee activities.",
+        imgSrc: "/app-screenshot.png",
+        imgAlt: "main screen",
         listItems: [
             "Record details of meetings, including discussion points and action items.",
             "Keep track of your employees' tasks and activities without directly assigning them.",
@@ -52,6 +58,8 @@ const featuresContent = [
         icon: ChartNoAxesColumn,
         header: "Activity Reports",
         subtitle: "Understand your progress with detailed insights.",
+        imgSrc: "/activity-report-screenshot.png",
+        imgAlt: "activity report screen",
         listItems: [
             "Retrieve automated summaries of your progress weekly, bi-weekly, or monthly.",
             "Share detailed reports with stakeholders or team members for alignment.",

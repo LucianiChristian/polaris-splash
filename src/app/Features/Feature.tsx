@@ -7,10 +7,12 @@ type Props = {
     header: string, 
     subtitle: string,
     listItems: string[],
+    imageSrc: string,
+    imageAlt: string,
     isLeft: boolean
 };
 
-export default function Feature({ icon: Icon, header, subtitle, listItems, isLeft }: Props) {
+export default function Feature({ icon: Icon, header, subtitle, listItems, imageSrc, imageAlt, isLeft }: Props) {
     return (
         <div className="w-full lg:pl-[100] flex flex-col lg:flex-row overflow-x-hidden" style={{direction: isLeft ? "ltr" : "rtl"}}>
             <div className="flex flex-col gap-8 lg:w-[50%] flex-shrink-0 px-4" style={{direction: "ltr"}}>
@@ -23,7 +25,7 @@ export default function Feature({ icon: Icon, header, subtitle, listItems, isLef
                     { listItems.map(ListItem) }
                 </ul>
             </div>
-            <img src="/app-screenshot.png" alt="app screenshot" className={`pt-10 lg:pt-0 ${!isLeft && "lg:pr-32"}`}/>
+            <img src={imageSrc} alt={imageAlt} className={`pt-10 lg:pt-0 ${!isLeft && "lg:pr-32"}`}/>
         </div>
     );
 }
