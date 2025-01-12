@@ -47,18 +47,8 @@ export default function PrivacyPolicyActivator({ children }: PrivacyPolicyActiva
             </div>
 
             <div className="flex flex-col gap-2">
-              <h2 className="text-xl font-semibold">5. Your Rights</h2>
-              <p>You can unsubscribe at any time by clicking the "unsubscribe" link in any email we send or by contacting us at <a href="mailto:[Your Contact Email]">[Your Contact Email]</a>. Once unsubscribed, your email address will be deleted from our records.</p>
-            </div>
-
-            <div className="flex flex-col gap-2">
               <h2 className="text-xl font-semibold">6. Changes to This Privacy Policy</h2>
               <p>We may update this Privacy Policy as needed. The latest version will always be available on this page.</p>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <h2 className="text-xl font-semibold">7. Contact Us</h2>
-              <p>If you have questions or concerns about this Privacy Policy, please contact us at: <a href="mailto:[Your Contact Email]">[Your Contact Email]</a>.</p>
             </div>
         </div>
       </DialogContent>
